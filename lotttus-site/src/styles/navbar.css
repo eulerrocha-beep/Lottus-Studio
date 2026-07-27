@@ -1,0 +1,84 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  
+  /* Fundo estilo Apple com Desfoque (Glassmorphism) */
+  background: var(--bg-navbar);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Suporte para Safari */
+  border-bottom: 1px solid var(--border-navbar);
+  
+  transition: all 0.4s ease;
+}
+
+/* Estado da Navbar ao Rolar a Página (Scroll) */
+.navbar.active {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow);
+  border-bottom-color: transparent;
+}
+
+/* Layout Interno */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px; /* Reduzido levemente para um aspecto mais fino e moderno */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.04);
+}
+
+/* Menu de Navegação */
+nav ul {
+  display: flex;
+  gap: 35px;
+  list-style: none; /* Garante remoção das bolinhas da lista */
+}
+
+nav a {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* Botão de Ação (CTA) */
+.btn {
+  background: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--secondary);
+  transform: translateY(-1px); /* Pequeno elevação sutil no hover */
+}

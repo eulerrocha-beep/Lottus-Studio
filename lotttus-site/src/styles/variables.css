@@ -1,0 +1,22 @@
+:root {
+
+    --bg-navbar: rgba(255, 255, 255, 0.8);
+
+    /* Cores extraídas do Logo Lóttus */
+    --primary: #C5A059;
+
+    --primary-hover: #D4AF37;
+
+    --secondary: #E3A882;
+
+    --text-color: #2D2D2E;
+
+
+
+    --bg-navbar: rgba(255, 255, 255, 0.85);
+
+
+    --border-navbar: rgba(0, 0, 0, 0.06);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+}
