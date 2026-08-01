@@ -1,0 +1,212 @@
+/* ==========================================================================
+   Footer LÓTTUS
+   ========================================================================== */
+
+
+.footer {
+
+  width: 100%;
+
+  padding: 5rem 1.5rem 2rem;
+
+  background: #1a1a1a;
+
+  color: #ffffff;
+
+}
+
+
+
+.footer-container {
+
+  max-width: 70rem;
+
+  margin: 0 auto 4rem;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+  gap: 3rem;
+
+}
+
+
+
+/* Marca */
+
+
+.footer-brand h2 {
+
+  margin-bottom: 1rem;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 2.5rem;
+
+  font-weight: 400;
+
+  letter-spacing: .05em;
+
+  color: #C5A363;
+
+}
+
+
+
+.footer-brand p {
+
+  max-width: 20rem;
+
+  color: rgba(255,255,255,.65);
+
+  font-size: .95rem;
+
+  line-height: 1.8;
+
+  font-weight: 300;
+
+}
+
+
+
+/* Títulos */
+
+
+.footer h3 {
+
+  margin-bottom: 1.5rem;
+
+  font-size: .75rem;
+
+  font-weight: 600;
+
+  letter-spacing: .2em;
+
+  text-transform: uppercase;
+
+  color: #C5A363;
+
+}
+
+
+
+/* Links */
+
+
+.footer-links,
+.footer-contact {
+
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+
+
+.footer a {
+
+  width: fit-content;
+
+  margin-bottom: .8rem;
+
+  color: rgba(255,255,255,.75);
+
+  text-decoration: none;
+
+  font-size: .95rem;
+
+  transition: color .3s ease;
+
+}
+
+
+
+.footer a:hover {
+
+  color: #C5A363;
+
+}
+
+
+
+/* Contato */
+
+
+.footer-contact p {
+
+  margin-top: .5rem;
+
+  color: rgba(255,255,255,.55);
+
+  font-size: .9rem;
+
+}
+
+
+
+/* Rodapé inferior */
+
+
+.footer-bottom {
+
+  padding-top: 2rem;
+
+  border-top: 1px solid rgba(255,255,255,.1);
+
+  text-align: center;
+
+}
+
+
+
+.footer-bottom p {
+
+  margin:0;
+
+  color: rgba(255,255,255,.45);
+
+  font-size:.85rem;
+
+}
+
+
+
+/* Responsivo */
+
+
+@media(max-width:900px){
+
+
+  .footer-container {
+
+    grid-template-columns: repeat(2,1fr);
+
+  }
+
+
+}
+
+
+
+@media(max-width:640px){
+
+
+  .footer {
+
+    padding-top:4rem;
+
+  }
+
+
+  .footer-container {
+
+    grid-template-columns:1fr;
+
+    gap:2.5rem;
+
+  }
+
+
+}

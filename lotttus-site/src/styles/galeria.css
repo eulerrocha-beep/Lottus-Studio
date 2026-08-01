@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Galeria LÓTTUS
+   Estilo Editorial / Luxury Wellness
+   ========================================================================== */
+
+
+.gallery-section {
+
+  width: 100%;
+  padding: 7rem 1.5rem;
+
+  background: #FAF9F6;
+
+}
+
+
+/* ==========================================================================
+   Cabeçalho
+   ========================================================================== */
+
+
+.gallery-header {
+
+  max-width: 50rem;
+
+  margin: 0 auto 4rem;
+
+  text-align: center;
+
+}
+
+
+.gallery-header span {
+
+  display: block;
+
+  margin-bottom: 1rem;
+
+  font-size: .75rem;
+
+  font-weight: 600;
+
+  letter-spacing: .2em;
+
+  text-transform: uppercase;
+
+  color: #C5A363;
+
+}
+
+
+.gallery-header h2 {
+
+  margin-bottom: 1.5rem;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  color: #1a1a1a;
+
+}
+
+
+.gallery-header h2 i {
+
+  color: #8C7343;
+
+  font-style: italic;
+
+}
+
+
+.gallery-header p {
+
+  max-width: 38rem;
+
+  margin: 0 auto;
+
+  color: #666;
+
+  font-size: 1.05rem;
+
+  font-weight: 300;
+
+  line-height: 1.7;
+
+}
+
+
+
+/* ==========================================================================
+   Grid Masonry
+   ========================================================================== */
+
+
+.gallery-grid {
+
+  width: 100%;
+
+  max-width: 70rem;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  grid-auto-rows: 220px;
+
+  gap: 1.25rem;
+
+}
+
+
+
+/* Cada imagem */
+
+.gallery-item {
+
+  overflow: hidden;
+
+  border-radius: 1.5rem;
+
+  position: relative;
+
+  background: #eee;
+
+}
+
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+
+
+.gallery-item:hover img {
+
+  transform: scale(1.06);
+
+}
+
+
+
+/* ==========================================================================
+   Distribuição das imagens
+   ========================================================================== */
+
+
+.item-1 {
+
+  grid-column: span 7;
+
+  grid-row: span 2;
+
+}
+
+
+.item-2 {
+
+  grid-column: span 5;
+
+}
+
+
+.item-3 {
+
+  grid-column: span 5;
+
+}
+
+
+.item-4 {
+
+  grid-column: span 5;
+
+}
+
+
+.item-5 {
+
+  grid-column: span 7;
+
+  grid-row: span 2;
+
+}
+
+
+
+/* ==========================================================================
+   Responsivo
+   ========================================================================== */
+
+
+@media(max-width: 1024px) {
+
+
+  .gallery-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-auto-rows: 260px;
+
+  }
+
+
+  .item-1,
+  .item-5 {
+
+    grid-column: span 2;
+
+    grid-row: span 1;
+
+  }
+
+
+  .item-2,
+  .item-3,
+  .item-4 {
+
+    grid-column: span 1;
+
+  }
+
+}
+
+
+
+@media(max-width:640px) {
+
+
+  .gallery-section {
+
+    padding: 5rem 1.25rem;
+
+  }
+
+
+  .gallery-grid {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+
+  .gallery-item {
+
+    height: 280px;
+
+  }
+
+
+}

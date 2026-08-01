@@ -5,7 +5,7 @@ import Servicos from "../components/Servicos";
 import Beneficios from "../components/Beneficios";
 import Galeria from "../components/Galeria";
 import Depoimentos from "../components/Depoimentos";
-import Contato from "../components/Contato";
+import Experiencia from "../components/Experiencia";
 import Footer from "../components/Footer";
 
 function Home() {
@@ -13,12 +13,12 @@ function Home() {
     <>
       <Navbar />
       <Hero />
-      <Sobre />
       <Servicos />
-      <Beneficios />
+      <Experiencia />
       <Galeria />
+      <Sobre />
+      <Beneficios />
       <Depoimentos />
-      <Contato />
       <Footer />
     </>
   );

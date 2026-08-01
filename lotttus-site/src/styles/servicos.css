@@ -1,0 +1,245 @@
+/* ==========================================================================
+   Serviços Section - LÓTTUS
+   Estilo Apple Minimalista / Luxury Wellness
+   ========================================================================== */
+
+.services-section {
+  width: 100%;
+  padding: 7rem 1.5rem;
+  background: #FAF9F6;
+}
+
+
+/* --- Cabeçalho da seção --- */
+
+.services-header {
+  max-width: 48rem;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.services-header span {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: #C5A363;
+}
+
+
+.services-header h2 {
+  margin-bottom: 1.5rem;
+
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+
+
+.services-header h2 i {
+  color: #8C7343;
+  font-style: italic;
+}
+
+
+.services-header p {
+  max-width: 36rem;
+  margin: 0 auto;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 300;
+
+  color: #666;
+}
+
+
+/* --- Grid dos serviços --- */
+
+.services-grid {
+
+  width: 100%;
+  max-width: 70rem;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+
+/* --- Card --- */
+
+.service-card {
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 1.5rem;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.05);
+
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
+}
+
+
+.service-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.08);
+}
+
+
+/* --- Imagem --- */
+
+.service-card img {
+  width: 100%;
+  height: 390px;
+
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+
+  transition: transform 500ms ease;
+}
+
+
+.service-card:hover img {
+
+  transform: scale(1.05);
+}
+
+
+/* --- Conteúdo --- */
+
+.service-content {
+
+  padding: 2rem;
+}
+
+
+.service-content h3 {
+
+  margin-bottom: 1rem;
+
+  font-family: "Playfair Display", Georgia, serif;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+
+  color: #1a1a1a;
+}
+
+
+.service-content p {
+
+  margin-bottom: 1.5rem;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+
+  color: #666;
+}
+
+
+.service-content a {
+
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 0.875rem;
+
+  font-weight: 500;
+
+  color: #8C7343;
+
+  text-decoration: none;
+
+  transition: color 200ms ease;
+}
+
+
+.service-content a:hover {
+
+  color: #C5A363;
+}
+
+
+
+/* ==========================================================================
+   Responsividade
+   ========================================================================== */
+
+
+@media (max-width: 1024px) {
+
+  .services-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+
+@media (max-width: 640px) {
+
+
+  .services-section {
+
+    padding: 5rem 1.25rem;
+
+  }
+
+
+  .services-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .service-card img {
+
+    height: 220px;
+
+  }
+
+
+  .service-content {
+
+    padding: 1.5rem;
+
+  }
+
+}
+
+.service-category {
+  display: block;
+  margin-bottom: .75rem;
+
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+
+  color: #C5A363;
+}
