@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import "../styles/navbar.css";
 import logo from "../assets/Lottus.png";
+import { NAV_LINKS, navigateToSection } from "../utils/scrollNavigation";
 
 function Navbar() {
   const [scroll, setScroll] = useState(false);
@@ -24,46 +25,32 @@ function Navbar() {
 
   const fecharMenu = () => setMenuOpen(false);
 
+  const handleNavClick = (event, path, sectionId) => {
+    fecharMenu();
+    navigateToSection(event, path, sectionId);
+  };
+
   return (
     <header className={scroll ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="logo">
-          <a href="#inicio" onClick={fecharMenu}>
+          <a href="/" onClick={(event) => handleNavClick(event, "/", "inicio")}>
             <img src={logo} alt="Lottus Studio" />
           </a>
         </div>
 
         <nav className={menuOpen ? "open" : ""}>
           <ul>
-            <li>
-              <a href="#inicio" onClick={fecharMenu}>
-                Início
-              </a>
-            </li>
-
-            <li>
-              <a href="#sobre" onClick={fecharMenu}>
-                Sobre
-              </a>
-            </li>
-
-            <li>
-              <a href="#servicos" onClick={fecharMenu}>
-                Serviços
-              </a>
-            </li>
-
-            <li>
-              <a href="#galeria" onClick={fecharMenu}>
-                Galeria
-              </a>
-            </li>
-
-            <li>
-              <a href="#contato" onClick={fecharMenu}>
-                Contato
-              </a>
-            </li>
+            {NAV_LINKS.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.path}
+                  onClick={(event) => handleNavClick(event, link.path, link.sectionId)}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 

@@ -89,7 +89,7 @@ function Hero() {
             Agendar Experiência
           </a>
 
-          <a href="#servicos" className="btn-secondary">
+          <a href="servicos" className="btn-secondary">
             Conhecer Tratamentos
           </a>
         </div>

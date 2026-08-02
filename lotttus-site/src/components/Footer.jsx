@@ -37,7 +37,7 @@ function Footer() {
             Início
           </a>
 
-          <a href="#sobre">
+          <a href="sobre">
             Sobre
           </a>
 
@@ -53,19 +53,19 @@ function Footer() {
             Tratamentos
           </h3>
 
-          <a href="#servicos">
+          <a href="servicos">
             Abhyanga
           </a>
 
-          <a href="#servicos">
+          <a href="servicos">
             Ventosaterapia
           </a>
 
-          <a href="#servicos">
+          <a href="servicos">
             Drenagem Linfática
           </a>
 
-          <a href="#servicos">
+          <a href="servicos">
             Massagem Modeladora
           </a>
 
